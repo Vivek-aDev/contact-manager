@@ -1,9 +1,11 @@
 import React from "react";
+import user from '../images/user.png'
 
 export const ContactCard = (props) => {
   const { id, name, email } = props.list;
   return (
     <div className="item" key={id}>
+      <img src={user} alt="" className="ui avatar image"/>
       <div className="content">
         <div className="header">
           {name}
